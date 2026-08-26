@@ -1,5 +1,7 @@
 # Connected Speech Analyzer — web version
 
+**Live:** https://flashist.github.io/connected-speech-analyzer/ (repo: https://github.com/flashist/connected-speech-analyzer)
+
 A single static web page that does everything the Python app does, **inside the browser**: no install, no server,
 audio never leaves the computer.
 
