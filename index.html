@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Connected Speech Analyzer</title>
+<meta name="description" content="See how native English speakers really pronounce things: IPA, reductions, assimilations, linking and intonation — analyzed in your browser.">
+<style>
+  :root {
+    --bg:#f7f6f2; --card:#fff; --ink:#1e2430; --muted:#6b7280; --line:#e5e3dc; --accent:#2f6fed;
+    --c-weak:#d97706; --c-contr:#7c3aed; --c-assim:#db2777; --c-elis:#dc2626; --c-flap:#059669; --c-glot:#475569; --c-link:#2563eb;
+    --ipa-font: "Charis SIL","Doulos SIL","Gentium Plus","Noto Sans","Segoe UI","DejaVu Sans",Arial,sans-serif;
+  }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
+  header { padding:22px 28px 10px; }
+  header h1 { margin:0; font-size:22px; font-weight:700; letter-spacing:-.01em; }
+  header p { margin:4px 0 0; color:var(--muted); }
+  main { max-width:1180px; margin:0 auto; padding:10px 28px 60px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin:14px 0; }
+  .card h2 { margin:0 0 10px; font-size:16px; }
+  .row { display:flex; gap:12px; align-items:center; flex-wrap:wrap; }
+  button, .btn { background:var(--accent); color:#fff; border:0; border-radius:8px; padding:9px 14px; font-size:14px; cursor:pointer; }
+  button.secondary { background:#eef1f7; color:var(--ink); }
+  button:disabled { opacity:.5; cursor:default; }
+  input[type=file] { font-size:14px; }
+  #status { color:var(--muted); }
+  .spinner { display:inline-block; width:14px; height:14px; border:2px solid #cbd5e1; border-top-color:var(--accent); border-radius:50%; animation:spin .8s linear infinite; vertical-align:-2px; margin-right:6px; }
+  @keyframes spin { to { transform:rotate(360deg);} }
+
+  /* legend */
+  .legend { display:flex; gap:10px 16px; flex-wrap:wrap; font-size:13px; color:var(--muted); }
+  .legend span::before { content:""; display:inline-block; width:10px; height:10px; border-radius:3px; margin-right:6px; vertical-align:-1px; background:var(--c); }
+
+  /* transcript */
+  .phrase { display:flex; flex-wrap:wrap; align-items:flex-end; gap:0; padding:14px 6px 6px; border-bottom:1px dashed var(--line); }
+  .phrase:last-child { border-bottom:0; }
+  .phrase .tag { width:100%; font-size:12px; color:var(--muted); margin-bottom:4px; }
+  .word { display:inline-flex; flex-direction:column; align-items:center; padding:2px 5px; border-radius:6px; cursor:pointer; position:relative; margin:2px 0; }
+  .word:hover { background:#f1f3f8; }
+  .word .txt { font-size:20px; line-height:1.15; }
+  .word.fn .txt { color:#4b5563; font-size:17px; }
+  .word.stressed .txt { font-weight:650; }
+  .word.nucleus .txt { text-decoration:underline; text-decoration-color:var(--accent); text-decoration-thickness:3px; text-underline-offset:4px; }
+  .word.accented .txt::before { content:"ˈ"; color:var(--accent); font-weight:700; margin-right:1px; }
+  .word .cit { font-family:var(--ipa-font); font-size:13px; color:#9ca3af; text-decoration:line-through; text-decoration-color:#d1d5db; min-height:16px; }
+  .word .con { font-family:var(--ipa-font); font-size:16px; color:var(--ink); min-height:18px; }
+  .word.plain .cit { text-decoration:none; }
+  .word.plain .con { color:#374151; }
+  .word.absorbed { display:none; }
+  .word .dot { display:flex; gap:3px; height:6px; margin-top:4px; }
+  .word .dot i { width:6px; height:6px; border-radius:50%; display:block; }
+  .link { align-self:flex-end; font-family:var(--ipa-font); color:var(--c-link); font-size:16px; padding-bottom:12px; margin:0 -3px; }
+  .pause { width:100%; height:0; }
+  .word.playing { background:#e8f0ff; }
+
+  /* tooltip */
+  .tip { position:absolute; z-index:20; background:#111827; color:#f9fafb; padding:10px 12px; border-radius:8px; font-size:13px; line-height:1.4; width:320px; box-shadow:0 8px 24px rgba(0,0,0,.2); pointer-events:none; }
+  .tip b { color:#fff; }
+  .tip .t { display:block; font-family:var(--ipa-font); font-size:14px; margin:3px 0; }
+  .tip .k { display:inline-block; padding:1px 6px; border-radius:4px; font-size:11px; color:#fff; margin-right:6px; text-transform:uppercase; letter-spacing:.03em; }
+
+  /* intonation */
+  .intonation .item { display:grid; grid-template-columns:1fr 280px; gap:16px; align-items:center; padding:10px 0; border-bottom:1px dashed var(--line); }
+  .intonation .item:last-child { border-bottom:0; }
+  .intonation .desc h3 { margin:0 0 4px; font-size:15px; }
+  .intonation .desc p { margin:0; color:var(--muted); font-size:13px; }
+  .intonation .desc .arrow { font-size:22px; color:var(--accent); margin-right:6px; }
+  .intonation svg { max-width:100%; height:auto; display:block; background:#fbfaf7; border:1px solid var(--line); border-radius:8px; }
+  .intonation .svgwrap { overflow-x:auto; }
+
+  /* phenomena list */
+  .plist { display:grid; grid-template-columns:repeat(auto-fill,minmax(340px,1fr)); gap:10px; }
+  .pitem { border:1px solid var(--line); border-left:4px solid var(--c); border-radius:8px; padding:10px 12px; background:#fff; }
+  .pitem .h { display:flex; justify-content:space-between; align-items:baseline; gap:8px; }
+  .pitem .h b { font-size:14px; }
+  .pitem .h small { color:var(--muted); white-space:nowrap; }
+  .pitem .ipa { font-family:var(--ipa-font); font-size:15px; margin:4px 0; }
+  .pitem .ipa s { color:#9ca3af; }
+  .pitem p { margin:4px 0 0; font-size:13px; color:#374151; }
+  .pitem .ac { font-size:12px; color:var(--muted); margin-top:4px; }
+  .pitem .play { margin-top:6px; background:#eef1f7; color:var(--ink); padding:4px 10px; font-size:12px; }
+  .filters { display:flex; gap:6px; flex-wrap:wrap; margin-bottom:10px; }
+  .filters button { background:#eef1f7; color:var(--ink); padding:5px 10px; font-size:13px; border-left:4px solid var(--c); }
+  .filters button.on { background:var(--c); color:#fff; }
+
+  #notes { white-space:pre-wrap; font-size:14px; line-height:1.55; }
+  #notes.md b { font-weight:650; }
+  .hint { font-size:12px; color:var(--muted); }
+  .conf-low { opacity:.65; }
+  .jobs a { display:block; font-size:13px; color:var(--accent); text-decoration:none; padding:2px 0; }
+  .jobs a span { color:var(--muted); }
+  .settings { display:none; margin-top:10px; padding-top:10px; border-top:1px dashed var(--line); gap:10px 16px; flex-wrap:wrap; align-items:center; font-size:13px; }
+  .settings.open { display:flex; }
+  .settings input[type=password] { width:280px; font-size:13px; padding:5px 7px; border:1px solid var(--line); border-radius:6px; }
+  .settings select { font-size:13px; padding:5px; }
+  .word input.edit { font-size:18px; padding:1px 4px; border:1px solid var(--accent); border-radius:4px; width:auto; }
+  .tip hr { border:0; border-top:1px solid #374151; margin:6px 0; }
+  .tip .hint2 { color:#9ca3af; font-size:11px; margin-top:6px; }
+  .intonation .desc .q { color:var(--ink); font-size:14px; margin-bottom:4px; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Connected Speech Analyzer</h1>
+  <p>Upload a clip of a native speaker. See every sound, the reductions and assimilations they used, and the melody of each phrase — all analyzed inside your browser.</p>
+</header>
+<main>
+  <div class="card">
+    <div class="row">
+      <input type="file" id="file" accept="audio/*,video/*,.ogg,.oga,.m4a,.mp3,.wav,.mp4,.mov,.webm">
+      <button id="go">Analyze</button>
+      <button id="toggle-settings" class="secondary">Settings</button>
+      <span id="status"></span>
+    </div>
+    <div class="hint" style="margin-top:6px">Audio or video, up to 3 minutes. Nothing is uploaded — the speech model runs in this browser tab (first use downloads it, ~200 MB). <span id="engine"></span></div>
+    <div class="settings" id="settings">
+      <label>Speech model <select id="model"><option value="base">base (fast, ~200 MB download)</option><option value="small">small (more accurate, ~590 MB)</option><option value="turbo">large‑v3‑turbo (best, ~760 MB, experimental)</option></select></label>
+      <label>Claude API key (optional, for listening notes; stays in this browser) <input type="password" id="apikey" placeholder="sk-ant-…"></label>
+    </div>
+  </div>
+
+  <div id="results" style="display:none">
+    <div class="card">
+      <div class="row" style="justify-content:space-between">
+        <h2 id="title" style="margin:0"></h2>
+        <audio id="audio" controls preload="auto"></audio>
+      </div>
+      <div class="legend" style="margin-top:8px">
+        <span style="--c:var(--c-contr)">contraction (gonna, didja)</span>
+        <span style="--c:var(--c-weak)">weak form (tə, ən, kən)</span>
+        <span style="--c:var(--c-flap)">flap T/D (ɾ)</span>
+        <span style="--c:var(--c-assim)">assimilation</span>
+        <span style="--c:var(--c-elis)">dropped sound</span>
+        <span style="--c:var(--c-glot)">glottal / unreleased T</span>
+        <span style="--c:var(--c-link)">linking ‿</span>
+      </div>
+      <div class="hint" style="margin-top:6px">Grey struck-through IPA = dictionary form. Black IPA = what the speaker actually did. <b>Bold</b> = sentence stress · <u style="text-decoration-color:var(--accent);text-decoration-thickness:3px">underlined</u> = main stress of the phrase · ˈ = pitch accent heard in the recording. Click a word to hear it; hover for the explanation; double‑click to correct a mis‑heard word.</div>
+    </div>
+    <div class="card" id="transcript"></div>
+    <div class="card intonation"><h2>Intonation</h2><div id="intonation"></div></div>
+    <div class="card"><h2>What the speaker did — <span id="pcount"></span></h2><div class="filters" id="filters"></div><div class="plist" id="plist"></div></div>
+    <div class="card">
+      <div class="row" style="justify-content:space-between"><h2 style="margin:0">Listening notes</h2><button id="explain" class="secondary">Generate notes</button></div>
+      <div id="notes" class="md"></div><div class="hint" id="notes-src"></div>
+    </div>
+  </div>
+</main>
+<script type="module" src="./js/app.js"></script>
+</body>
+</html>

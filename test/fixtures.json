@@ -1,0 +1,3982 @@
+[
+ {
+  "sentence": "I'm going to get a cup of coffee and a bottle of water, did you want to come?",
+  "words": [
+   {
+    "idx": 0,
+    "raw": "I'm",
+    "text": "i'm",
+    "start": 0.0,
+    "end": 0.15,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 1,
+    "raw": "going",
+    "text": "going",
+    "start": 0.17,
+    "end": 0.32,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 2,
+    "raw": "to",
+    "text": "to",
+    "start": 0.34,
+    "end": 0.49,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 3,
+    "raw": "get",
+    "text": "get",
+    "start": 0.51,
+    "end": 0.66,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 4,
+    "raw": "a",
+    "text": "a",
+    "start": 0.68,
+    "end": 0.8300000000000001,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 5,
+    "raw": "cup",
+    "text": "cup",
+    "start": 0.8500000000000001,
+    "end": 1.0,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 6,
+    "raw": "of",
+    "text": "of",
+    "start": 1.02,
+    "end": 1.17,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 7,
+    "raw": "coffee",
+    "text": "coffee",
+    "start": 1.19,
+    "end": 1.3399999999999999,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 8,
+    "raw": "and",
+    "text": "and",
+    "start": 1.3599999999999999,
+    "end": 1.5099999999999998,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 9,
+    "raw": "a",
+    "text": "a",
+    "start": 1.5299999999999998,
+    "end": 1.6799999999999997,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 10,
+    "raw": "bottle",
+    "text": "bottle",
+    "start": 1.6999999999999997,
+    "end": 1.8499999999999996,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 11,
+    "raw": "of",
+    "text": "of",
+    "start": 1.8699999999999997,
+    "end": 2.0199999999999996,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 12,
+    "raw": "water,",
+    "text": "water",
+    "start": 2.0399999999999996,
+    "end": 2.1899999999999995,
+    "ends_phrase": true,
+    "punct": ","
+   },
+   {
+    "idx": 13,
+    "raw": "did",
+    "text": "did",
+    "start": 2.2099999999999995,
+    "end": 2.3599999999999994,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 14,
+    "raw": "you",
+    "text": "you",
+    "start": 2.3799999999999994,
+    "end": 2.5299999999999994,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 15,
+    "raw": "want",
+    "text": "want",
+    "start": 2.5499999999999994,
+    "end": 2.6999999999999993,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 16,
+    "raw": "to",
+    "text": "to",
+    "start": 2.7199999999999993,
+    "end": 2.869999999999999,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 17,
+    "raw": "come?",
+    "text": "come",
+    "start": 2.8899999999999992,
+    "end": 3.039999999999999,
+    "ends_phrase": true,
+    "punct": "?"
+   }
+  ],
+  "expect": {
+   "connected": [
+    "aɪm",
+    "ˈɡʌnə",
+    "",
+    "ɡɛɾ",
+    "ə",
+    "kʌp",
+    "ə",
+    "ˈkɑfi",
+    "ən",
+    "ə",
+    "ˈbɑɾəl",
+    "ə",
+    "ˈwɔɾɚ",
+    "ˈdɪdʒə",
+    "",
+    "ˈwʌnə",
+    "",
+    "kʌm"
+   ],
+   "citation": [
+    "aɪm",
+    "ˈɡoʊɪŋ",
+    "tu",
+    "ɡɛt",
+    "eɪ",
+    "kʌp",
+    "ʌv",
+    "ˈkɑfi",
+    "ænd",
+    "eɪ",
+    "ˈbɑtəl",
+    "ʌv",
+    "ˈwɔtɚ",
+    "dɪd",
+    "ju",
+    "wɑnt",
+    "tu",
+    "kʌm"
+   ],
+   "link": [
+    "",
+    "",
+    "",
+    "‿",
+    "",
+    "‿",
+    "",
+    "ʲ",
+    "‿",
+    "",
+    "‿",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "stressed": [
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true,
+    false,
+    true
+   ],
+   "absorbed": [
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    true,
+    false
+   ],
+   "phenomena": [
+    {
+     "type": "contraction",
+     "label": "'going to' → 'gonna'",
+     "words": [
+      1,
+      2
+     ],
+     "before": "ˈɡoʊɪŋ tu",
+     "after": "ˈɡʌnə",
+     "confidence": "high"
+    },
+    {
+     "type": "contraction",
+     "label": "'did you' → 'didja'",
+     "words": [
+      13,
+      14
+     ],
+     "before": "dɪd ju",
+     "after": "ˈdɪdʒə",
+     "confidence": "high"
+    },
+    {
+     "type": "contraction",
+     "label": "'want to' → 'wanna'",
+     "words": [
+      15,
+      16
+     ],
+     "before": "wɑnt tu",
+     "after": "ˈwʌnə",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'a'",
+     "words": [
+      4
+     ],
+     "before": "eɪ",
+     "after": "ə",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'of'",
+     "words": [
+      6
+     ],
+     "before": "ʌv",
+     "after": "ə",
+     "confidence": "medium"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'and'",
+     "words": [
+      8
+     ],
+     "before": "ænd",
+     "after": "ən",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'a'",
+     "words": [
+      9
+     ],
+     "before": "eɪ",
+     "after": "ə",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'of'",
+     "words": [
+      11
+     ],
+     "before": "ʌv",
+     "after": "ə",
+     "confidence": "medium"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap T linking 'get' → 'a'",
+     "words": [
+      3,
+      4
+     ],
+     "before": "ɡɛt ə",
+     "after": "ɡɛɾ ə",
+     "confidence": "high"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap T in 'bottle'",
+     "words": [
+      10
+     ],
+     "before": "ˈbɑtəl",
+     "after": "ˈbɑɾəl",
+     "confidence": "high"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap T in 'water'",
+     "words": [
+      12
+     ],
+     "before": "ˈwɔtɚ",
+     "after": "ˈwɔɾɚ",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'cup‿of'",
+     "words": [
+      5,
+      6
+     ],
+     "before": "kʌp ə",
+     "after": "kʌp‿ə",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Y-glide 'coffee‿ʲand'",
+     "words": [
+      7,
+      8
+     ],
+     "before": "ˈkɑfi ən",
+     "after": "ˈkɑfiʲən",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'and‿a'",
+     "words": [
+      8,
+      9
+     ],
+     "before": "ən ə",
+     "after": "ən‿ə",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'bottle‿of'",
+     "words": [
+      10,
+      11
+     ],
+     "before": "ˈbɑɾəl ə",
+     "after": "ˈbɑɾəl‿ə",
+     "confidence": "high"
+    }
+   ]
+  }
+ },
+ {
+  "sentence": "What are you doing next Sunday? I just can't stand it. Ten men in Paris. I miss you.",
+  "words": [
+   {
+    "idx": 0,
+    "raw": "What",
+    "text": "what",
+    "start": 0.0,
+    "end": 0.15,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 1,
+    "raw": "are",
+    "text": "are",
+    "start": 0.17,
+    "end": 0.32,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 2,
+    "raw": "you",
+    "text": "you",
+    "start": 0.34,
+    "end": 0.49,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 3,
+    "raw": "doing",
+    "text": "doing",
+    "start": 0.51,
+    "end": 0.66,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 4,
+    "raw": "next",
+    "text": "next",
+    "start": 0.68,
+    "end": 0.8300000000000001,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 5,
+    "raw": "Sunday?",
+    "text": "sunday",
+    "start": 0.8500000000000001,
+    "end": 1.0,
+    "ends_phrase": true,
+    "punct": "?"
+   },
+   {
+    "idx": 6,
+    "raw": "I",
+    "text": "i",
+    "start": 1.02,
+    "end": 1.17,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 7,
+    "raw": "just",
+    "text": "just",
+    "start": 1.19,
+    "end": 1.3399999999999999,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 8,
+    "raw": "can't",
+    "text": "can't",
+    "start": 1.3599999999999999,
+    "end": 1.5099999999999998,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 9,
+    "raw": "stand",
+    "text": "stand",
+    "start": 1.5299999999999998,
+    "end": 1.6799999999999997,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 10,
+    "raw": "it.",
+    "text": "it",
+    "start": 1.6999999999999997,
+    "end": 1.8499999999999996,
+    "ends_phrase": true,
+    "punct": "."
+   },
+   {
+    "idx": 11,
+    "raw": "Ten",
+    "text": "ten",
+    "start": 1.8699999999999997,
+    "end": 2.0199999999999996,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 12,
+    "raw": "men",
+    "text": "men",
+    "start": 2.0399999999999996,
+    "end": 2.1899999999999995,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 13,
+    "raw": "in",
+    "text": "in",
+    "start": 2.2099999999999995,
+    "end": 2.3599999999999994,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 14,
+    "raw": "Paris.",
+    "text": "paris",
+    "start": 2.3799999999999994,
+    "end": 2.5299999999999994,
+    "ends_phrase": true,
+    "punct": "."
+   },
+   {
+    "idx": 15,
+    "raw": "I",
+    "text": "i",
+    "start": 2.5499999999999994,
+    "end": 2.6999999999999993,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 16,
+    "raw": "miss",
+    "text": "miss",
+    "start": 2.7199999999999993,
+    "end": 2.869999999999999,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 17,
+    "raw": "you.",
+    "text": "you",
+    "start": 2.8899999999999992,
+    "end": 3.039999999999999,
+    "ends_phrase": true,
+    "punct": "."
+   }
+  ],
+  "expect": {
+   "connected": [
+    "ˈwʌɾɚjə",
+    "",
+    "",
+    "ˈduɪŋ",
+    "nɛks",
+    "ˈsʌnˌdeɪ",
+    "aɪ",
+    "dʒəs",
+    "kænʔ",
+    "stænd",
+    "ɪʔ",
+    "tɛm",
+    "mɛn",
+    "ɪm",
+    "ˈpɛɹɪs",
+    "aɪ",
+    "ˈmɪʃə",
+    ""
+   ],
+   "citation": [
+    "wʌt",
+    "ɑɹ",
+    "ju",
+    "ˈduɪŋ",
+    "nɛkst",
+    "ˈsʌnˌdeɪ",
+    "aɪ",
+    "dʒʌst",
+    "kænt",
+    "stænd",
+    "ɪt",
+    "tɛn",
+    "mɛn",
+    "ɪn",
+    "ˈpɛɹɪs",
+    "aɪ",
+    "mɪs",
+    "ju"
+   ],
+   "link": [
+    "",
+    "",
+    "",
+    "",
+    "‿",
+    "",
+    "",
+    "",
+    "",
+    "‿",
+    "",
+    "",
+    "‿",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "stressed": [
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    false,
+    true,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false
+   ],
+   "absorbed": [
+    false,
+    true,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true
+   ],
+   "phenomena": [
+    {
+     "type": "contraction",
+     "label": "'what are you' → 'whaddaya'",
+     "words": [
+      0,
+      1,
+      2
+     ],
+     "before": "wʌt ɑɹ ju",
+     "after": "ˈwʌtɚjə",
+     "confidence": "high"
+    },
+    {
+     "type": "contraction",
+     "label": "'miss you' → 'missya'",
+     "words": [
+      16,
+      17
+     ],
+     "before": "mɪs ju",
+     "after": "ˈmɪʃə",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'just'",
+     "words": [
+      7
+     ],
+     "before": "dʒʌst",
+     "after": "dʒəst",
+     "confidence": "medium"
+    },
+    {
+     "type": "elision",
+     "label": "Dropped /t/ in 'next'",
+     "words": [
+      4,
+      5
+     ],
+     "before": "nɛkst ˈsʌnˌdeɪ",
+     "after": "nɛks ˈsʌnˌdeɪ",
+     "confidence": "high"
+    },
+    {
+     "type": "elision",
+     "label": "Dropped /t/ in 'just'",
+     "words": [
+      7,
+      8
+     ],
+     "before": "dʒəst kænt",
+     "after": "dʒəs kænt",
+     "confidence": "high"
+    },
+    {
+     "type": "glottal",
+     "label": "Glottal T in 'can't'",
+     "words": [
+      8
+     ],
+     "before": "kænt",
+     "after": "kænʔ",
+     "confidence": "high"
+    },
+    {
+     "type": "assimilation",
+     "label": "/n/ → /m/ before a lip sound",
+     "words": [
+      11,
+      12
+     ],
+     "before": "tɛn mɛn",
+     "after": "tɛm mɛn",
+     "confidence": "medium"
+    },
+    {
+     "type": "assimilation",
+     "label": "/n/ → /m/ before a lip sound",
+     "words": [
+      13,
+      14
+     ],
+     "before": "ɪn ˈpɛɹɪs",
+     "after": "ɪm ˈpɛɹɪs",
+     "confidence": "medium"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap T in 'what'",
+     "words": [
+      0
+     ],
+     "before": "ˈwʌtɚjə",
+     "after": "ˈwʌɾɚjə",
+     "confidence": "high"
+    },
+    {
+     "type": "glottal",
+     "label": "Unreleased final T in 'it'",
+     "words": [
+      10
+     ],
+     "before": "ɪt",
+     "after": "ɪʔ",
+     "confidence": "medium"
+    },
+    {
+     "type": "linking",
+     "label": "Double consonant 'next sunday'",
+     "words": [
+      4,
+      5
+     ],
+     "before": "nɛks ˈsʌnˌdeɪ",
+     "after": "nɛks‿ˈsʌnˌdeɪ",
+     "confidence": "medium"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'stand‿it'",
+     "words": [
+      9,
+      10
+     ],
+     "before": "stænd ɪʔ",
+     "after": "stænd‿ɪʔ",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'men‿in'",
+     "words": [
+      12,
+      13
+     ],
+     "before": "mɛn ɪm",
+     "after": "mɛn‿ɪm",
+     "confidence": "high"
+    }
+   ]
+  }
+ },
+ {
+  "sentence": "He said that he could have done it at twenty. Go on, tell him the answer.",
+  "words": [
+   {
+    "idx": 0,
+    "raw": "He",
+    "text": "he",
+    "start": 0.0,
+    "end": 0.15,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 1,
+    "raw": "said",
+    "text": "said",
+    "start": 0.17,
+    "end": 0.32,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 2,
+    "raw": "that",
+    "text": "that",
+    "start": 0.34,
+    "end": 0.49,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 3,
+    "raw": "he",
+    "text": "he",
+    "start": 0.51,
+    "end": 0.66,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 4,
+    "raw": "could",
+    "text": "could",
+    "start": 0.68,
+    "end": 0.8300000000000001,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 5,
+    "raw": "have",
+    "text": "have",
+    "start": 0.8500000000000001,
+    "end": 1.0,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 6,
+    "raw": "done",
+    "text": "done",
+    "start": 1.02,
+    "end": 1.17,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 7,
+    "raw": "it",
+    "text": "it",
+    "start": 1.19,
+    "end": 1.3399999999999999,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 8,
+    "raw": "at",
+    "text": "at",
+    "start": 1.3599999999999999,
+    "end": 1.5099999999999998,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 9,
+    "raw": "twenty.",
+    "text": "twenty",
+    "start": 1.5299999999999998,
+    "end": 1.6799999999999997,
+    "ends_phrase": true,
+    "punct": "."
+   },
+   {
+    "idx": 10,
+    "raw": "Go",
+    "text": "go",
+    "start": 1.6999999999999997,
+    "end": 1.8499999999999996,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 11,
+    "raw": "on,",
+    "text": "on",
+    "start": 1.8699999999999997,
+    "end": 2.0199999999999996,
+    "ends_phrase": true,
+    "punct": ","
+   },
+   {
+    "idx": 12,
+    "raw": "tell",
+    "text": "tell",
+    "start": 2.0399999999999996,
+    "end": 2.1899999999999995,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 13,
+    "raw": "him",
+    "text": "him",
+    "start": 2.2099999999999995,
+    "end": 2.3599999999999994,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 14,
+    "raw": "the",
+    "text": "the",
+    "start": 2.3799999999999994,
+    "end": 2.5299999999999994,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 15,
+    "raw": "answer.",
+    "text": "answer",
+    "start": 2.5499999999999994,
+    "end": 2.6999999999999993,
+    "ends_phrase": true,
+    "punct": "."
+   }
+  ],
+  "expect": {
+   "connected": [
+    "hi",
+    "sɛd",
+    "ðəɾ",
+    "i",
+    "kəɾ",
+    "əv",
+    "dʌn",
+    "ɪɾ",
+    "əʔ",
+    "ˈtwɛni",
+    "ɡoʊ",
+    "ɑn",
+    "tɛl",
+    "ɪm",
+    "ði",
+    "ˈænsɚ"
+   ],
+   "citation": [
+    "hi",
+    "sɛd",
+    "ðæt",
+    "hi",
+    "kʊd",
+    "hæv",
+    "dʌn",
+    "ɪt",
+    "æt",
+    "ˈtwɛnti",
+    "ɡoʊ",
+    "ɑn",
+    "tɛl",
+    "hɪm",
+    "ðʌ",
+    "ˈænsɚ"
+   ],
+   "link": [
+    "",
+    "",
+    "‿",
+    "",
+    "‿",
+    "",
+    "‿",
+    "‿",
+    "",
+    "",
+    "ʷ",
+    "",
+    "‿",
+    "",
+    "ʲ",
+    ""
+   ],
+   "stressed": [
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true
+   ],
+   "absorbed": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "phenomena": [
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'that'",
+     "words": [
+      2
+     ],
+     "before": "ðæt",
+     "after": "ðət",
+     "confidence": "medium"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'he'",
+     "words": [
+      3
+     ],
+     "before": "hi",
+     "after": "i",
+     "confidence": "medium"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'could'",
+     "words": [
+      4
+     ],
+     "before": "kʊd",
+     "after": "kəd",
+     "confidence": "medium"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'have'",
+     "words": [
+      5
+     ],
+     "before": "hæv",
+     "after": "əv",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'at'",
+     "words": [
+      8
+     ],
+     "before": "æt",
+     "after": "ət",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'him'",
+     "words": [
+      13
+     ],
+     "before": "hɪm",
+     "after": "ɪm",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'the'",
+     "words": [
+      14
+     ],
+     "before": "ðʌ",
+     "after": "ði",
+     "confidence": "high"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap T linking 'that' → 'he'",
+     "words": [
+      2,
+      3
+     ],
+     "before": "ðət i",
+     "after": "ðəɾ i",
+     "confidence": "high"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap D linking 'could' → 'have'",
+     "words": [
+      4,
+      5
+     ],
+     "before": "kəd əv",
+     "after": "kəɾ əv",
+     "confidence": "high"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap T linking 'it' → 'at'",
+     "words": [
+      7,
+      8
+     ],
+     "before": "ɪt ət",
+     "after": "ɪɾ ət",
+     "confidence": "high"
+    },
+    {
+     "type": "elision",
+     "label": "Silent T after N in 'twenty'",
+     "words": [
+      9
+     ],
+     "before": "ˈtwɛnti",
+     "after": "ˈtwɛni",
+     "confidence": "medium"
+    },
+    {
+     "type": "glottal",
+     "label": "Unreleased final T in 'at'",
+     "words": [
+      8
+     ],
+     "before": "ət",
+     "after": "əʔ",
+     "confidence": "medium"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'done‿it'",
+     "words": [
+      6,
+      7
+     ],
+     "before": "dʌn ɪɾ",
+     "after": "dʌn‿ɪɾ",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "W-glide 'go‿ʷon'",
+     "words": [
+      10,
+      11
+     ],
+     "before": "ɡoʊ ɑn",
+     "after": "ɡoʊʷɑn",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'tell‿him'",
+     "words": [
+      12,
+      13
+     ],
+     "before": "tɛl ɪm",
+     "after": "tɛl‿ɪm",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Y-glide 'the‿ʲanswer'",
+     "words": [
+      14,
+      15
+     ],
+     "before": "ði ˈænsɚ",
+     "after": "ðiʲˈænsɚ",
+     "confidence": "high"
+    }
+   ]
+  }
+ },
+ {
+  "sentence": "I need an app where you can upload a video or an audio and this app has to analyze the speech.",
+  "words": [
+   {
+    "idx": 0,
+    "raw": "I",
+    "text": "i",
+    "start": 0.0,
+    "end": 0.15,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 1,
+    "raw": "need",
+    "text": "need",
+    "start": 0.17,
+    "end": 0.32,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 2,
+    "raw": "an",
+    "text": "an",
+    "start": 0.34,
+    "end": 0.49,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 3,
+    "raw": "app",
+    "text": "app",
+    "start": 0.51,
+    "end": 0.66,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 4,
+    "raw": "where",
+    "text": "where",
+    "start": 0.68,
+    "end": 0.8300000000000001,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 5,
+    "raw": "you",
+    "text": "you",
+    "start": 0.8500000000000001,
+    "end": 1.0,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 6,
+    "raw": "can",
+    "text": "can",
+    "start": 1.02,
+    "end": 1.17,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 7,
+    "raw": "upload",
+    "text": "upload",
+    "start": 1.19,
+    "end": 1.3399999999999999,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 8,
+    "raw": "a",
+    "text": "a",
+    "start": 1.3599999999999999,
+    "end": 1.5099999999999998,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 9,
+    "raw": "video",
+    "text": "video",
+    "start": 1.5299999999999998,
+    "end": 1.6799999999999997,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 10,
+    "raw": "or",
+    "text": "or",
+    "start": 1.6999999999999997,
+    "end": 1.8499999999999996,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 11,
+    "raw": "an",
+    "text": "an",
+    "start": 1.8699999999999997,
+    "end": 2.0199999999999996,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 12,
+    "raw": "audio",
+    "text": "audio",
+    "start": 2.0399999999999996,
+    "end": 2.1899999999999995,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 13,
+    "raw": "and",
+    "text": "and",
+    "start": 2.2099999999999995,
+    "end": 2.3599999999999994,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 14,
+    "raw": "this",
+    "text": "this",
+    "start": 2.3799999999999994,
+    "end": 2.5299999999999994,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 15,
+    "raw": "app",
+    "text": "app",
+    "start": 2.5499999999999994,
+    "end": 2.6999999999999993,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 16,
+    "raw": "has",
+    "text": "has",
+    "start": 2.7199999999999993,
+    "end": 2.869999999999999,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 17,
+    "raw": "to",
+    "text": "to",
+    "start": 2.8899999999999992,
+    "end": 3.039999999999999,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 18,
+    "raw": "analyze",
+    "text": "analyze",
+    "start": 3.059999999999999,
+    "end": 3.209999999999999,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 19,
+    "raw": "the",
+    "text": "the",
+    "start": 3.229999999999999,
+    "end": 3.379999999999999,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 20,
+    "raw": "speech.",
+    "text": "speech",
+    "start": 3.399999999999999,
+    "end": 3.549999999999999,
+    "ends_phrase": true,
+    "punct": "."
+   }
+  ],
+  "expect": {
+   "connected": [
+    "aɪ",
+    "niɾ",
+    "ən",
+    "æp",
+    "wɛɹ",
+    "jə",
+    "kən",
+    "ˈʌˌploʊɾ",
+    "ə",
+    "ˈvɪɾioʊ",
+    "ɚ",
+    "ən",
+    "ˈɑɾiˌoʊ",
+    "n",
+    "ðɪs",
+    "æp",
+    "ˈhæstə",
+    "",
+    "ˈænəˌlaɪz",
+    "ðə",
+    "spitʃ"
+   ],
+   "citation": [
+    "aɪ",
+    "nid",
+    "æn",
+    "æp",
+    "wɛɹ",
+    "ju",
+    "kæn",
+    "ˈʌˌploʊd",
+    "eɪ",
+    "ˈvɪdioʊ",
+    "ɔɹ",
+    "æn",
+    "ˈɑdiˌoʊ",
+    "ænd",
+    "ðɪs",
+    "æp",
+    "hæz",
+    "tu",
+    "ˈænəˌlaɪz",
+    "ðʌ",
+    "spitʃ"
+   ],
+   "link": [
+    "",
+    "‿",
+    "‿",
+    "",
+    "",
+    "",
+    "‿",
+    "‿",
+    "",
+    "ʷ",
+    "",
+    "‿",
+    "",
+    "",
+    "‿",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "stressed": [
+    false,
+    true,
+    false,
+    true,
+    true,
+    false,
+    false,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true,
+    false,
+    true,
+    true,
+    false,
+    false,
+    true,
+    false,
+    true
+   ],
+   "absorbed": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false
+   ],
+   "phenomena": [
+    {
+     "type": "contraction",
+     "label": "'has to' → 'hasta'",
+     "words": [
+      16,
+      17
+     ],
+     "before": "hæz tu",
+     "after": "ˈhæstə",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'an'",
+     "words": [
+      2
+     ],
+     "before": "æn",
+     "after": "ən",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'you'",
+     "words": [
+      5
+     ],
+     "before": "ju",
+     "after": "jə",
+     "confidence": "medium"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'can'",
+     "words": [
+      6
+     ],
+     "before": "kæn",
+     "after": "kən",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'a'",
+     "words": [
+      8
+     ],
+     "before": "eɪ",
+     "after": "ə",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'or'",
+     "words": [
+      10
+     ],
+     "before": "ɔɹ",
+     "after": "ɚ",
+     "confidence": "medium"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'an'",
+     "words": [
+      11
+     ],
+     "before": "æn",
+     "after": "ən",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'and'",
+     "words": [
+      13
+     ],
+     "before": "ænd",
+     "after": "n",
+     "confidence": "medium"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'the'",
+     "words": [
+      19
+     ],
+     "before": "ðʌ",
+     "after": "ðə",
+     "confidence": "high"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap D linking 'need' → 'an'",
+     "words": [
+      1,
+      2
+     ],
+     "before": "nid ən",
+     "after": "niɾ ən",
+     "confidence": "high"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap D linking 'upload' → 'a'",
+     "words": [
+      7,
+      8
+     ],
+     "before": "ˈʌˌploʊd ə",
+     "after": "ˈʌˌploʊɾ ə",
+     "confidence": "high"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap D in 'video'",
+     "words": [
+      9
+     ],
+     "before": "ˈvɪdioʊ",
+     "after": "ˈvɪɾioʊ",
+     "confidence": "high"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap D in 'audio'",
+     "words": [
+      12
+     ],
+     "before": "ˈɑdiˌoʊ",
+     "after": "ˈɑɾiˌoʊ",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'an‿app'",
+     "words": [
+      2,
+      3
+     ],
+     "before": "ən æp",
+     "after": "ən‿æp",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'can‿upload'",
+     "words": [
+      6,
+      7
+     ],
+     "before": "kən ˈʌˌploʊɾ",
+     "after": "kən‿ˈʌˌploʊɾ",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "W-glide 'video‿ʷor'",
+     "words": [
+      9,
+      10
+     ],
+     "before": "ˈvɪɾioʊ ɚ",
+     "after": "ˈvɪɾioʊʷɚ",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'an‿audio'",
+     "words": [
+      11,
+      12
+     ],
+     "before": "ən ˈɑɾiˌoʊ",
+     "after": "ən‿ˈɑɾiˌoʊ",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'this‿app'",
+     "words": [
+      14,
+      15
+     ],
+     "before": "ðɪs æp",
+     "after": "ðɪs‿æp",
+     "confidence": "high"
+    }
+   ]
+  }
+ },
+ {
+  "sentence": "She's gonna be there at seven, but I dunno if we should wait for them.",
+  "words": [
+   {
+    "idx": 0,
+    "raw": "She's",
+    "text": "she's",
+    "start": 0.0,
+    "end": 0.15,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 1,
+    "raw": "gonna",
+    "text": "gonna",
+    "start": 0.17,
+    "end": 0.32,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 2,
+    "raw": "be",
+    "text": "be",
+    "start": 0.34,
+    "end": 0.49,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 3,
+    "raw": "there",
+    "text": "there",
+    "start": 0.51,
+    "end": 0.66,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 4,
+    "raw": "at",
+    "text": "at",
+    "start": 0.68,
+    "end": 0.8300000000000001,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 5,
+    "raw": "seven,",
+    "text": "seven",
+    "start": 0.8500000000000001,
+    "end": 1.0,
+    "ends_phrase": true,
+    "punct": ","
+   },
+   {
+    "idx": 6,
+    "raw": "but",
+    "text": "but",
+    "start": 1.02,
+    "end": 1.17,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 7,
+    "raw": "I",
+    "text": "i",
+    "start": 1.19,
+    "end": 1.3399999999999999,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 8,
+    "raw": "dunno",
+    "text": "dunno",
+    "start": 1.3599999999999999,
+    "end": 1.5099999999999998,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 9,
+    "raw": "if",
+    "text": "if",
+    "start": 1.5299999999999998,
+    "end": 1.6799999999999997,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 10,
+    "raw": "we",
+    "text": "we",
+    "start": 1.6999999999999997,
+    "end": 1.8499999999999996,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 11,
+    "raw": "should",
+    "text": "should",
+    "start": 1.8699999999999997,
+    "end": 2.0199999999999996,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 12,
+    "raw": "wait",
+    "text": "wait",
+    "start": 2.0399999999999996,
+    "end": 2.1899999999999995,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 13,
+    "raw": "for",
+    "text": "for",
+    "start": 2.2099999999999995,
+    "end": 2.3599999999999994,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 14,
+    "raw": "them.",
+    "text": "them",
+    "start": 2.3799999999999994,
+    "end": 2.5299999999999994,
+    "ends_phrase": true,
+    "punct": "."
+   }
+  ],
+  "expect": {
+   "connected": [
+    "ʃiz",
+    "ˈɡʌnə",
+    "bi",
+    "ðɛɹ",
+    "əʔ",
+    "ˈsɛvən",
+    "bəɾ",
+    "aɪ",
+    "dəˈnoʊ",
+    "ɪf",
+    "wi",
+    "ʃəd",
+    "weɪʔ",
+    "fɚ",
+    "ðɛm"
+   ],
+   "citation": [
+    "ʃiz",
+    "ˈɡʌnə",
+    "bi",
+    "ðɛɹ",
+    "æt",
+    "ˈsɛvən",
+    "bʌt",
+    "aɪ",
+    "dəˈnoʊ",
+    "ɪf",
+    "wi",
+    "ʃʊd",
+    "weɪt",
+    "fɔɹ",
+    "ðɛm"
+   ],
+   "link": [
+    "",
+    "",
+    "",
+    "‿",
+    "",
+    "",
+    "‿",
+    "",
+    "ʷ",
+    "",
+    "",
+    "",
+    "",
+    "",
+    ""
+   ],
+   "stressed": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false
+   ],
+   "absorbed": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "phenomena": [
+    {
+     "type": "contraction",
+     "label": "'gonna' = 'going to'",
+     "words": [
+      1
+     ],
+     "before": "going to",
+     "after": "ˈɡʌnə",
+     "confidence": "high"
+    },
+    {
+     "type": "contraction",
+     "label": "'dunno' = 'don't know'",
+     "words": [
+      8
+     ],
+     "before": "don't know",
+     "after": "dəˈnoʊ",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'at'",
+     "words": [
+      4
+     ],
+     "before": "æt",
+     "after": "ət",
+     "confidence": "medium"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'but'",
+     "words": [
+      6
+     ],
+     "before": "bʌt",
+     "after": "bət",
+     "confidence": "low"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'should'",
+     "words": [
+      11
+     ],
+     "before": "ʃʊd",
+     "after": "ʃəd",
+     "confidence": "low"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'for'",
+     "words": [
+      13
+     ],
+     "before": "fɔɹ",
+     "after": "fɚ",
+     "confidence": "medium"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap T linking 'but' → 'i'",
+     "words": [
+      6,
+      7
+     ],
+     "before": "bət aɪ",
+     "after": "bəɾ aɪ",
+     "confidence": "high"
+    },
+    {
+     "type": "glottal",
+     "label": "Unreleased final T in 'at'",
+     "words": [
+      4
+     ],
+     "before": "ət",
+     "after": "əʔ",
+     "confidence": "medium"
+    },
+    {
+     "type": "glottal",
+     "label": "Unreleased final T in 'wait'",
+     "words": [
+      12
+     ],
+     "before": "weɪt",
+     "after": "weɪʔ",
+     "confidence": "medium"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'there‿at'",
+     "words": [
+      3,
+      4
+     ],
+     "before": "ðɛɹ əʔ",
+     "after": "ðɛɹ‿əʔ",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "W-glide 'dunno‿ʷif'",
+     "words": [
+      8,
+      9
+     ],
+     "before": "dəˈnoʊ ɪf",
+     "after": "dəˈnoʊʷɪf",
+     "confidence": "high"
+    }
+   ]
+  }
+ },
+ {
+  "sentence": "Would you like some of these? Certain buttons on the mountain are written in red.",
+  "words": [
+   {
+    "idx": 0,
+    "raw": "Would",
+    "text": "would",
+    "start": 0.0,
+    "end": 0.15,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 1,
+    "raw": "you",
+    "text": "you",
+    "start": 0.17,
+    "end": 0.32,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 2,
+    "raw": "like",
+    "text": "like",
+    "start": 0.34,
+    "end": 0.49,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 3,
+    "raw": "some",
+    "text": "some",
+    "start": 0.51,
+    "end": 0.66,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 4,
+    "raw": "of",
+    "text": "of",
+    "start": 0.68,
+    "end": 0.8300000000000001,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 5,
+    "raw": "these?",
+    "text": "these",
+    "start": 0.8500000000000001,
+    "end": 1.0,
+    "ends_phrase": true,
+    "punct": "?"
+   },
+   {
+    "idx": 6,
+    "raw": "Certain",
+    "text": "certain",
+    "start": 1.02,
+    "end": 1.17,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 7,
+    "raw": "buttons",
+    "text": "buttons",
+    "start": 1.19,
+    "end": 1.3399999999999999,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 8,
+    "raw": "on",
+    "text": "on",
+    "start": 1.3599999999999999,
+    "end": 1.5099999999999998,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 9,
+    "raw": "the",
+    "text": "the",
+    "start": 1.5299999999999998,
+    "end": 1.6799999999999997,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 10,
+    "raw": "mountain",
+    "text": "mountain",
+    "start": 1.6999999999999997,
+    "end": 1.8499999999999996,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 11,
+    "raw": "are",
+    "text": "are",
+    "start": 1.8699999999999997,
+    "end": 2.0199999999999996,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 12,
+    "raw": "written",
+    "text": "written",
+    "start": 2.0399999999999996,
+    "end": 2.1899999999999995,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 13,
+    "raw": "in",
+    "text": "in",
+    "start": 2.2099999999999995,
+    "end": 2.3599999999999994,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 14,
+    "raw": "red.",
+    "text": "red",
+    "start": 2.3799999999999994,
+    "end": 2.5299999999999994,
+    "ends_phrase": true,
+    "punct": "."
+   }
+  ],
+  "expect": {
+   "connected": [
+    "ˈwʊdʒə",
+    "",
+    "laɪk",
+    "sʌm",
+    "ə",
+    "ðiz",
+    "ˈsɝɾəm",
+    "ˈbʌɾənz",
+    "ɑn",
+    "ðə",
+    "ˈmaʊnən",
+    "ɚ",
+    "ˈɹɪɾən",
+    "ɪn",
+    "ɹɛd"
+   ],
+   "citation": [
+    "wʊd",
+    "ju",
+    "laɪk",
+    "sʌm",
+    "ʌv",
+    "ðiz",
+    "ˈsɝtən",
+    "ˈbʌtənz",
+    "ɑn",
+    "ðʌ",
+    "ˈmaʊntən",
+    "ɑɹ",
+    "ˈɹɪtən",
+    "ɪn",
+    "ɹɛd"
+   ],
+   "link": [
+    "",
+    "",
+    "",
+    "‿",
+    "",
+    "",
+    "",
+    "‿",
+    "",
+    "",
+    "‿",
+    "",
+    "‿",
+    "",
+    ""
+   ],
+   "stressed": [
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    false,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true
+   ],
+   "absorbed": [
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "phenomena": [
+    {
+     "type": "contraction",
+     "label": "'would you' → 'wouldja'",
+     "words": [
+      0,
+      1
+     ],
+     "before": "wʊd ju",
+     "after": "ˈwʊdʒə",
+     "confidence": "medium"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'of'",
+     "words": [
+      4
+     ],
+     "before": "ʌv",
+     "after": "ə",
+     "confidence": "low"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'the'",
+     "words": [
+      9
+     ],
+     "before": "ðʌ",
+     "after": "ðə",
+     "confidence": "medium"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'are'",
+     "words": [
+      11
+     ],
+     "before": "ɑɹ",
+     "after": "ɚ",
+     "confidence": "medium"
+    },
+    {
+     "type": "assimilation",
+     "label": "/n/ → /m/ before a lip sound",
+     "words": [
+      6,
+      7
+     ],
+     "before": "ˈsɝtən ˈbʌtənz",
+     "after": "ˈsɝtəm ˈbʌtənz",
+     "confidence": "medium"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap T in 'certain'",
+     "words": [
+      6
+     ],
+     "before": "ˈsɝtəm",
+     "after": "ˈsɝɾəm",
+     "confidence": "high"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap T in 'buttons'",
+     "words": [
+      7
+     ],
+     "before": "ˈbʌtənz",
+     "after": "ˈbʌɾənz",
+     "confidence": "high"
+    },
+    {
+     "type": "elision",
+     "label": "Silent T after N in 'mountain'",
+     "words": [
+      10
+     ],
+     "before": "ˈmaʊntən",
+     "after": "ˈmaʊnən",
+     "confidence": "medium"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap T in 'written'",
+     "words": [
+      12
+     ],
+     "before": "ˈɹɪtən",
+     "after": "ˈɹɪɾən",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'some‿of'",
+     "words": [
+      3,
+      4
+     ],
+     "before": "sʌm ə",
+     "after": "sʌm‿ə",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'buttons‿on'",
+     "words": [
+      7,
+      8
+     ],
+     "before": "ˈbʌɾənz ɑn",
+     "after": "ˈbʌɾənz‿ɑn",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'mountain‿are'",
+     "words": [
+      10,
+      11
+     ],
+     "before": "ˈmaʊnən ɚ",
+     "after": "ˈmaʊnən‿ɚ",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'written‿in'",
+     "words": [
+      12,
+      13
+     ],
+     "before": "ˈɹɪɾən ɪn",
+     "after": "ˈɹɪɾən‿ɪn",
+     "confidence": "high"
+    }
+   ]
+  }
+ },
+ {
+  "sentence": "MEMO",
+  "words": [
+   {
+    "idx": 0,
+    "raw": "I",
+    "text": "i",
+    "start": 0.0,
+    "end": 0.4067500000000004,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 1,
+    "raw": "need",
+    "text": "need",
+    "start": 0.88,
+    "end": 1.12,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 2,
+    "raw": "an",
+    "text": "an",
+    "start": 1.12,
+    "end": 1.32,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 3,
+    "raw": "app",
+    "text": "app",
+    "start": 1.32,
+    "end": 1.54,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 4,
+    "raw": "where",
+    "text": "where",
+    "start": 1.54,
+    "end": 1.88,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 5,
+    "raw": "you",
+    "text": "you",
+    "start": 1.88,
+    "end": 2.38,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 6,
+    "raw": "can",
+    "text": "can",
+    "start": 2.38,
+    "end": 2.76,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 7,
+    "raw": "upload",
+    "text": "upload",
+    "start": 2.76,
+    "end": 2.9467500000000006,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 8,
+    "raw": "a",
+    "text": "a",
+    "start": 3.72,
+    "end": 4.13675,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 9,
+    "raw": "video",
+    "text": "video",
+    "start": 5.18,
+    "end": 5.58,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 10,
+    "raw": "or",
+    "text": "or",
+    "start": 5.58,
+    "end": 6.18,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 11,
+    "raw": "an",
+    "text": "an",
+    "start": 6.18,
+    "end": 6.5,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 12,
+    "raw": "audio",
+    "text": "audio",
+    "start": 6.5,
+    "end": 6.86,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 13,
+    "raw": "and",
+    "text": "and",
+    "start": 6.86,
+    "end": 7.3267500000000005,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 14,
+    "raw": "this",
+    "text": "this",
+    "start": 7.8,
+    "end": 8.34,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 15,
+    "raw": "app",
+    "text": "app",
+    "start": 8.34,
+    "end": 8.49675,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 16,
+    "raw": "has",
+    "text": "has",
+    "start": 8.96,
+    "end": 9.28,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 17,
+    "raw": "to",
+    "text": "to",
+    "start": 9.28,
+    "end": 9.5,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 18,
+    "raw": "analyze",
+    "text": "analyze",
+    "start": 9.5,
+    "end": 10.0,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 19,
+    "raw": "the",
+    "text": "the",
+    "start": 10.0,
+    "end": 10.54,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 20,
+    "raw": "speech",
+    "text": "speech",
+    "start": 10.54,
+    "end": 11.02,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 21,
+    "raw": "and",
+    "text": "and",
+    "start": 11.02,
+    "end": 11.72,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 22,
+    "raw": "just",
+    "text": "just",
+    "start": 11.72,
+    "end": 11.85675,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 23,
+    "raw": "parse",
+    "text": "parse",
+    "start": 13.48,
+    "end": 14.38,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 24,
+    "raw": "out",
+    "text": "out",
+    "start": 14.38,
+    "end": 14.96,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 25,
+    "raw": "every",
+    "text": "every",
+    "start": 14.96,
+    "end": 15.06675,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 26,
+    "raw": "sound",
+    "text": "sound",
+    "start": 16.94,
+    "end": 17.07675,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 27,
+    "raw": "for",
+    "text": "for",
+    "start": 18.12,
+    "end": 18.32675,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 28,
+    "raw": "the",
+    "text": "the",
+    "start": 18.76,
+    "end": 18.94,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 29,
+    "raw": "student",
+    "text": "student",
+    "start": 18.94,
+    "end": 19.36,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 30,
+    "raw": "and",
+    "text": "and",
+    "start": 19.36,
+    "end": 20.3,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 31,
+    "raw": "all",
+    "text": "all",
+    "start": 20.3,
+    "end": 20.74,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 32,
+    "raw": "the",
+    "text": "the",
+    "start": 20.74,
+    "end": 21.1,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 33,
+    "raw": "reductions",
+    "text": "reductions",
+    "start": 21.1,
+    "end": 22.14,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 34,
+    "raw": "and",
+    "text": "and",
+    "start": 22.14,
+    "end": 22.86,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 35,
+    "raw": "simulations",
+    "text": "simulations",
+    "start": 22.86,
+    "end": 23.68,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 36,
+    "raw": "that",
+    "text": "that",
+    "start": 23.68,
+    "end": 24.28,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 37,
+    "raw": "have",
+    "text": "have",
+    "start": 24.28,
+    "end": 24.62,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 38,
+    "raw": "been",
+    "text": "been",
+    "start": 24.62,
+    "end": 24.82,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 39,
+    "raw": "used",
+    "text": "used",
+    "start": 24.82,
+    "end": 25.12,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 40,
+    "raw": "there",
+    "text": "there",
+    "start": 25.12,
+    "end": 25.48,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 41,
+    "raw": "because",
+    "text": "because",
+    "start": 25.48,
+    "end": 25.80675,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 42,
+    "raw": "most",
+    "text": "most",
+    "start": 26.2,
+    "end": 26.6,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 43,
+    "raw": "students",
+    "text": "students",
+    "start": 26.6,
+    "end": 27.12,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 44,
+    "raw": "can't",
+    "text": "can't",
+    "start": 27.12,
+    "end": 28.18,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 45,
+    "raw": "do",
+    "text": "do",
+    "start": 28.18,
+    "end": 28.34,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 46,
+    "raw": "that",
+    "text": "that",
+    "start": 28.34,
+    "end": 28.68,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 47,
+    "raw": "on",
+    "text": "on",
+    "start": 28.68,
+    "end": 29.14,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 48,
+    "raw": "their",
+    "text": "their",
+    "start": 29.14,
+    "end": 29.36,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 49,
+    "raw": "own.",
+    "text": "own",
+    "start": 29.36,
+    "end": 29.6,
+    "ends_phrase": true,
+    "punct": "."
+   },
+   {
+    "idx": 50,
+    "raw": "So,",
+    "text": "so",
+    "start": 30.0,
+    "end": 30.72,
+    "ends_phrase": true,
+    "punct": ","
+   },
+   {
+    "idx": 51,
+    "raw": "and",
+    "text": "and",
+    "start": 31.28,
+    "end": 31.5,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 52,
+    "raw": "also",
+    "text": "also",
+    "start": 31.5,
+    "end": 31.94,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 53,
+    "raw": "add",
+    "text": "add",
+    "start": 31.94,
+    "end": 32.48,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 54,
+    "raw": "the",
+    "text": "the",
+    "start": 32.48,
+    "end": 32.61675,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 55,
+    "raw": "intonation",
+    "text": "intonation",
+    "start": 33.62,
+    "end": 34.48,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 56,
+    "raw": "pattern",
+    "text": "pattern",
+    "start": 34.48,
+    "end": 34.98,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 57,
+    "raw": "for",
+    "text": "for",
+    "start": 34.98,
+    "end": 35.38,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 58,
+    "raw": "them",
+    "text": "them",
+    "start": 35.38,
+    "end": 35.68,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 59,
+    "raw": "and",
+    "text": "and",
+    "start": 35.68,
+    "end": 36.12675,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 60,
+    "raw": "use",
+    "text": "use",
+    "start": 36.6,
+    "end": 36.98675,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 61,
+    "raw": "some",
+    "text": "some",
+    "start": 38.04,
+    "end": 38.56,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 62,
+    "raw": "visual",
+    "text": "visual",
+    "start": 38.56,
+    "end": 38.84675,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 63,
+    "raw": "tools",
+    "text": "tools",
+    "start": 39.74,
+    "end": 40.146750000000004,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 64,
+    "raw": "to",
+    "text": "to",
+    "start": 44.36,
+    "end": 44.81675,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 65,
+    "raw": "show",
+    "text": "show",
+    "start": 45.42,
+    "end": 45.88,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 66,
+    "raw": "that,",
+    "text": "that",
+    "start": 45.88,
+    "end": 46.3,
+    "ends_phrase": true,
+    "punct": ","
+   },
+   {
+    "idx": 67,
+    "raw": "maybe",
+    "text": "maybe",
+    "start": 46.95675,
+    "end": 47.16,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 68,
+    "raw": "explain",
+    "text": "explain",
+    "start": 47.16,
+    "end": 47.66,
+    "ends_phrase": false,
+    "punct": ""
+   },
+   {
+    "idx": 69,
+    "raw": "it.",
+    "text": "it",
+    "start": 47.66,
+    "end": 48.04,
+    "ends_phrase": true,
+    "punct": "."
+   }
+  ],
+  "expect": {
+   "connected": [
+    "aɪ",
+    "niɾ",
+    "ən",
+    "æp",
+    "wɛɹ",
+    "jə",
+    "kən",
+    "ˈʌˌploʊd",
+    "ə",
+    "ˈvɪɾioʊ",
+    "ɚ",
+    "ən",
+    "ˈɑɾiˌoʊ",
+    "ænd",
+    "ðɪs",
+    "æp",
+    "ˈhæstə",
+    "",
+    "ˈænəˌlaɪz",
+    "ðə",
+    "spitʃ",
+    "n",
+    "dʒʌst",
+    "pɑɹs",
+    "aʊɾ",
+    "ˈɛvɚi",
+    "saʊnd",
+    "fɔɹ",
+    "ðə",
+    "ˈstuɾənt",
+    "ən",
+    "ɔl",
+    "ðə",
+    "ɹiˈdʌkʃənz",
+    "n",
+    "ˌsɪmjuˈleɪʃənz",
+    "ðæʔ",
+    "hæv",
+    "bɪn",
+    "juz",
+    "ðɛɹ",
+    "bɪˈkʌz",
+    "moʊs",
+    "ˈstuɾənts",
+    "kænʔ",
+    "du",
+    "ðæɾ",
+    "ɑn",
+    "ðɛɹ",
+    "oʊn",
+    "soʊ",
+    "ən",
+    "ˈɔlsoʊ",
+    "æd",
+    "ðə",
+    "ˌɪnəˈneɪʃəm",
+    "ˈpæɾɚn",
+    "fɚ",
+    "əm",
+    "ænd",
+    "jus",
+    "səm",
+    "ˈvɪʒəwəl",
+    "tulz",
+    "tu",
+    "ʃoʊ",
+    "ðæʔ",
+    "ˈmeɪbi",
+    "ɪkˈspleɪn",
+    "ɪʔ"
+   ],
+   "citation": [
+    "aɪ",
+    "nid",
+    "æn",
+    "æp",
+    "wɛɹ",
+    "ju",
+    "kæn",
+    "ˈʌˌploʊd",
+    "eɪ",
+    "ˈvɪdioʊ",
+    "ɔɹ",
+    "æn",
+    "ˈɑdiˌoʊ",
+    "ænd",
+    "ðɪs",
+    "æp",
+    "hæz",
+    "tu",
+    "ˈænəˌlaɪz",
+    "ðʌ",
+    "spitʃ",
+    "ænd",
+    "dʒʌst",
+    "pɑɹs",
+    "aʊt",
+    "ˈɛvɚi",
+    "saʊnd",
+    "fɔɹ",
+    "ðʌ",
+    "ˈstudənt",
+    "ænd",
+    "ɔl",
+    "ðʌ",
+    "ɹiˈdʌkʃənz",
+    "ænd",
+    "ˌsɪmjuˈleɪʃənz",
+    "ðæt",
+    "hæv",
+    "bɪn",
+    "juzd",
+    "ðɛɹ",
+    "bɪˈkʌz",
+    "moʊst",
+    "ˈstudənts",
+    "kænt",
+    "du",
+    "ðæt",
+    "ɑn",
+    "ðɛɹ",
+    "oʊn",
+    "soʊ",
+    "ænd",
+    "ˈɔlsoʊ",
+    "æd",
+    "ðʌ",
+    "ˌɪntəˈneɪʃən",
+    "ˈpætɚn",
+    "fɔɹ",
+    "ðɛm",
+    "ænd",
+    "jus",
+    "sʌm",
+    "ˈvɪʒəwəl",
+    "tulz",
+    "tu",
+    "ʃoʊ",
+    "ðæt",
+    "ˈmeɪbi",
+    "ɪkˈspleɪn",
+    "ɪt"
+   ],
+   "link": [
+    "",
+    "‿",
+    "‿",
+    "",
+    "",
+    "",
+    "‿",
+    "",
+    "",
+    "ʷ",
+    "",
+    "‿",
+    "ʷ",
+    "",
+    "‿",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "‿",
+    "‿",
+    "",
+    "",
+    "",
+    "",
+    "‿",
+    "‿",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "‿",
+    "",
+    "",
+    "",
+    "‿",
+    "",
+    "‿",
+    "",
+    "",
+    "‿",
+    "ʷ",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "‿",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "ʲ",
+    "‿",
+    ""
+   ],
+   "stressed": [
+    false,
+    true,
+    false,
+    true,
+    true,
+    false,
+    false,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true,
+    false,
+    true,
+    true,
+    false,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    true,
+    false,
+    true,
+    true,
+    false,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    false,
+    true,
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
+    true,
+    true,
+    false,
+    true,
+    false,
+    false,
+    true,
+    false,
+    false,
+    true,
+    true,
+    false,
+    true,
+    true,
+    false,
+    false,
+    false,
+    true,
+    false,
+    true,
+    true,
+    false,
+    true,
+    true,
+    true,
+    true,
+    false
+   ],
+   "absorbed": [
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    true,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false,
+    false
+   ],
+   "phenomena": [
+    {
+     "type": "contraction",
+     "label": "'has to' → 'hasta'",
+     "words": [
+      16,
+      17
+     ],
+     "before": "hæz tu",
+     "after": "ˈhæstə",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'an'",
+     "words": [
+      2
+     ],
+     "before": "æn",
+     "after": "ən",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'you'",
+     "words": [
+      5
+     ],
+     "before": "ju",
+     "after": "jə",
+     "confidence": "low"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'can'",
+     "words": [
+      6
+     ],
+     "before": "kæn",
+     "after": "kən",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'a'",
+     "words": [
+      8
+     ],
+     "before": "eɪ",
+     "after": "ə",
+     "confidence": "medium"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'or'",
+     "words": [
+      10
+     ],
+     "before": "ɔɹ",
+     "after": "ɚ",
+     "confidence": "low"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'an'",
+     "words": [
+      11
+     ],
+     "before": "æn",
+     "after": "ən",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'the'",
+     "words": [
+      19
+     ],
+     "before": "ðʌ",
+     "after": "ðə",
+     "confidence": "medium"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'and'",
+     "words": [
+      21
+     ],
+     "before": "ænd",
+     "after": "n",
+     "confidence": "low"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'the'",
+     "words": [
+      28
+     ],
+     "before": "ðʌ",
+     "after": "ðə",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'and'",
+     "words": [
+      30
+     ],
+     "before": "ænd",
+     "after": "ən",
+     "confidence": "medium"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'the'",
+     "words": [
+      32
+     ],
+     "before": "ðʌ",
+     "after": "ðə",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'and'",
+     "words": [
+      34
+     ],
+     "before": "ænd",
+     "after": "n",
+     "confidence": "low"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'and'",
+     "words": [
+      51
+     ],
+     "before": "ænd",
+     "after": "ən",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'the'",
+     "words": [
+      54
+     ],
+     "before": "ðʌ",
+     "after": "ðə",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'for'",
+     "words": [
+      57
+     ],
+     "before": "fɔɹ",
+     "after": "fɚ",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'them'",
+     "words": [
+      58
+     ],
+     "before": "ðɛm",
+     "after": "əm",
+     "confidence": "high"
+    },
+    {
+     "type": "weak_form",
+     "label": "Weak form of 'some'",
+     "words": [
+      61
+     ],
+     "before": "sʌm",
+     "after": "səm",
+     "confidence": "low"
+    },
+    {
+     "type": "elision",
+     "label": "Dropped /d/ in 'used'",
+     "words": [
+      39,
+      40
+     ],
+     "before": "juzd ðɛɹ",
+     "after": "juz ðɛɹ",
+     "confidence": "high"
+    },
+    {
+     "type": "elision",
+     "label": "Dropped /t/ in 'most'",
+     "words": [
+      42,
+      43
+     ],
+     "before": "moʊst ˈstudənts",
+     "after": "moʊs ˈstudənts",
+     "confidence": "high"
+    },
+    {
+     "type": "glottal",
+     "label": "Glottal T in 'can't'",
+     "words": [
+      44
+     ],
+     "before": "kænt",
+     "after": "kænʔ",
+     "confidence": "high"
+    },
+    {
+     "type": "assimilation",
+     "label": "/n/ → /m/ before a lip sound",
+     "words": [
+      55,
+      56
+     ],
+     "before": "ˌɪntəˈneɪʃən ˈpætɚn",
+     "after": "ˌɪntəˈneɪʃəm ˈpætɚn",
+     "confidence": "medium"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap D linking 'need' → 'an'",
+     "words": [
+      1,
+      2
+     ],
+     "before": "nid ən",
+     "after": "niɾ ən",
+     "confidence": "high"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap D in 'video'",
+     "words": [
+      9
+     ],
+     "before": "ˈvɪdioʊ",
+     "after": "ˈvɪɾioʊ",
+     "confidence": "high"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap D in 'audio'",
+     "words": [
+      12
+     ],
+     "before": "ˈɑdiˌoʊ",
+     "after": "ˈɑɾiˌoʊ",
+     "confidence": "high"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap T linking 'out' → 'every'",
+     "words": [
+      24,
+      25
+     ],
+     "before": "aʊt ˈɛvɚi",
+     "after": "aʊɾ ˈɛvɚi",
+     "confidence": "high"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap D in 'student'",
+     "words": [
+      29
+     ],
+     "before": "ˈstudənt",
+     "after": "ˈstuɾənt",
+     "confidence": "high"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap D in 'students'",
+     "words": [
+      43
+     ],
+     "before": "ˈstudənts",
+     "after": "ˈstuɾənts",
+     "confidence": "high"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap T linking 'that' → 'on'",
+     "words": [
+      46,
+      47
+     ],
+     "before": "ðæt ɑn",
+     "after": "ðæɾ ɑn",
+     "confidence": "high"
+    },
+    {
+     "type": "elision",
+     "label": "Silent T after N in 'intonation'",
+     "words": [
+      55
+     ],
+     "before": "ˌɪntəˈneɪʃəm",
+     "after": "ˌɪnəˈneɪʃəm",
+     "confidence": "medium"
+    },
+    {
+     "type": "flapping",
+     "label": "Flap T in 'pattern'",
+     "words": [
+      56
+     ],
+     "before": "ˈpætɚn",
+     "after": "ˈpæɾɚn",
+     "confidence": "high"
+    },
+    {
+     "type": "glottal",
+     "label": "Unreleased final T in 'that'",
+     "words": [
+      36
+     ],
+     "before": "ðæt",
+     "after": "ðæʔ",
+     "confidence": "medium"
+    },
+    {
+     "type": "glottal",
+     "label": "Unreleased final T in 'that'",
+     "words": [
+      66
+     ],
+     "before": "ðæt",
+     "after": "ðæʔ",
+     "confidence": "medium"
+    },
+    {
+     "type": "glottal",
+     "label": "Unreleased final T in 'it'",
+     "words": [
+      69
+     ],
+     "before": "ɪt",
+     "after": "ɪʔ",
+     "confidence": "medium"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'an‿app'",
+     "words": [
+      2,
+      3
+     ],
+     "before": "ən æp",
+     "after": "ən‿æp",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'can‿upload'",
+     "words": [
+      6,
+      7
+     ],
+     "before": "kən ˈʌˌploʊd",
+     "after": "kən‿ˈʌˌploʊd",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "W-glide 'video‿ʷor'",
+     "words": [
+      9,
+      10
+     ],
+     "before": "ˈvɪɾioʊ ɚ",
+     "after": "ˈvɪɾioʊʷɚ",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'an‿audio'",
+     "words": [
+      11,
+      12
+     ],
+     "before": "ən ˈɑɾiˌoʊ",
+     "after": "ən‿ˈɑɾiˌoʊ",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "W-glide 'audio‿ʷand'",
+     "words": [
+      12,
+      13
+     ],
+     "before": "ˈɑɾiˌoʊ ænd",
+     "after": "ˈɑɾiˌoʊʷænd",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'this‿app'",
+     "words": [
+      14,
+      15
+     ],
+     "before": "ðɪs æp",
+     "after": "ðɪs‿æp",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'parse‿out'",
+     "words": [
+      23,
+      24
+     ],
+     "before": "pɑɹs aʊɾ",
+     "after": "pɑɹs‿aʊɾ",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'student‿and'",
+     "words": [
+      29,
+      30
+     ],
+     "before": "ˈstuɾənt ən",
+     "after": "ˈstuɾənt‿ən",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'and‿all'",
+     "words": [
+      30,
+      31
+     ],
+     "before": "ən ɔl",
+     "after": "ən‿ɔl",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Double consonant 'most students'",
+     "words": [
+      42,
+      43
+     ],
+     "before": "moʊs ˈstuɾənts",
+     "after": "moʊs‿ˈstuɾənts",
+     "confidence": "medium"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'their‿own'",
+     "words": [
+      48,
+      49
+     ],
+     "before": "ðɛɹ oʊn",
+     "after": "ðɛɹ‿oʊn",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'and‿also'",
+     "words": [
+      51,
+      52
+     ],
+     "before": "ən ˈɔlsoʊ",
+     "after": "ən‿ˈɔlsoʊ",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "W-glide 'also‿ʷadd'",
+     "words": [
+      52,
+      53
+     ],
+     "before": "ˈɔlsoʊ æd",
+     "after": "ˈɔlsoʊʷæd",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'them‿and'",
+     "words": [
+      58,
+      59
+     ],
+     "before": "əm ænd",
+     "after": "əm‿ænd",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Y-glide 'maybe‿ʲexplain'",
+     "words": [
+      67,
+      68
+     ],
+     "before": "ˈmeɪbi ɪkˈspleɪn",
+     "after": "ˈmeɪbiʲɪkˈspleɪn",
+     "confidence": "high"
+    },
+    {
+     "type": "linking",
+     "label": "Link 'explain‿it'",
+     "words": [
+      68,
+      69
+     ],
+     "before": "ɪkˈspleɪn ɪʔ",
+     "after": "ɪkˈspleɪn‿ɪʔ",
+     "confidence": "high"
+    }
+   ]
+  }
+ }
+]
