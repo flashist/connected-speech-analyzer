@@ -33,14 +33,20 @@ env.customCache = {
     const entry = m[rel];
     if (!entry || !entry.parts) return undefined;               // plain files are fetched normally by the library
     const dir = rel.slice(0, rel.lastIndexOf('/') + 1);
-    const chunks = [];
+    const file = rel.slice(rel.lastIndexOf('/') + 1);
+    const all = new Uint8Array(entry.size); let off = 0;
     for (const p of entry.parts) {
       const r = await fetch(MODELS + dir + p);
-      if (!r.ok) throw new Error(`Could not download ${p} (${r.status})`);
-      chunks.push(new Uint8Array(await r.arrayBuffer()));
+      if (!r.ok || !r.body) throw new Error(`Could not download ${p} (${r.status})`);
+      const reader = r.body.getReader();
+      for (;;) {
+        const { done, value } = await reader.read();
+        if (done) break;
+        all.set(value, off); off += value.length;
+        postMessage({ type: 'progress', data: { status: 'progress', file, loaded: off, total: entry.size, progress: 100 * off / entry.size } });
+      }
     }
-    const all = new Uint8Array(entry.size); let off = 0;
-    for (const ch of chunks) { all.set(ch, off); off += ch.length; }
+    if (off !== entry.size) throw new Error(`Download of ${file} incomplete (${off} of ${entry.size} bytes)`);
     const resp = new Response(all, { status: 200, headers: { 'Content-Type': 'application/octet-stream', 'Content-Length': String(entry.size) } });
     if (c) { try { await c.put(key, resp.clone()); } catch {} }
     return resp;
@@ -53,8 +59,8 @@ env.customCache = {
 
 let transcriber = null, loadedKey = '', loading = null;
 
-function load(model, device) {
-  const key = model + '|' + device;
+function load(model, device, dtypeOverride) {
+  const key = model + '|' + device + '|' + (dtypeOverride || '');
   if (transcriber && loadedKey === key) return Promise.resolve();
   if (loading && loading.key === key) return loading.p;
   // fp16 variants give garbage on some GPUs, so stick to fp32 encoder + q4 decoder (the combination the official
@@ -63,7 +69,7 @@ function load(model, device) {
                  : { encoder_model: 'fp32', decoder_model_merged: 'q4' };
   const opts = {
     device,
-    dtype: device === 'webgpu' ? gpuDtype : 'q8',
+    dtype: dtypeOverride || (device === 'webgpu' ? gpuDtype : 'q8'),
     progress_callback: p => postMessage({ type: 'progress', data: p }),
   };
   const p = pipeline('automatic-speech-recognition', model, opts).then(t => { transcriber = t; loadedKey = key; loading = null; }, err => { loading = null; throw err; });
@@ -73,11 +79,11 @@ function load(model, device) {
 self.onerror = e => postMessage({ type: 'error', id: null, message: 'worker error: ' + (e && e.message || e) });
 
 self.onmessage = async e => {
-  const { type, audio, model, device, id } = e.data;
+  const { type, audio, model, device, id, dtype } = e.data;
   try {
-    if (type === 'load') { await load(model, device); postMessage({ type: 'ready', id }); return; }
+    if (type === 'load') { await load(model, device, dtype); postMessage({ type: 'ready', id }); return; }
     if (type === 'transcribe') {
-      await load(model, device);
+      await load(model, device, dtype);
       const t0 = performance.now();
       const genOpts = { return_timestamps: 'word', chunk_length_s: 30, stride_length_s: 5 };
       if (!/\.en(_|$)/.test(model)) Object.assign(genOpts, { language: 'en', task: 'transcribe' });

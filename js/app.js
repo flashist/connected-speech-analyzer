@@ -30,6 +30,7 @@ $('#apikey').onchange = e => { settings.key = e.target.value.trim(); saveSetting
 $('#toggle-settings').onclick = () => { $('#settings').classList.toggle('open'); };
 
 const hasWebGPU = !!navigator.gpu;
+const DTYPE = new URLSearchParams(location.search).get('dtype') || undefined;   // e.g. ?dtype=q8 to force the small int8 files
 $('#engine').textContent = hasWebGPU ? 'WebGPU available — fast.' : 'No WebGPU in this browser — using the slower CPU path (Chrome or Edge recommended).';
 
 function setStatus(html) { $('#status').innerHTML = html; }
@@ -47,8 +48,8 @@ function transcribe(samples) {
       const m = e.data;
       if (m.type === 'progress') {
         const p = m.data;
-        if (p.status === 'progress' && p.file) { seen[p.file] = p.progress || 0; const files = Object.keys(seen); const avg = files.reduce((s, f) => s + seen[f], 0) / files.length;
-          setStatus(`<span class="spinner"></span>Downloading speech model (first time only)… ${avg.toFixed(0)}%`); }
+        if (p.status === 'progress' && p.file) { seen[p.file] = [p.loaded || 0, p.total || 0]; let l = 0, t = 0; for (const f in seen) { l += seen[f][0]; t += seen[f][1]; }
+          setStatus(`<span class="spinner"></span>Downloading speech model (first time only, then cached)… ${(l / 1048576).toFixed(0)} / ${(t / 1048576).toFixed(0)} MB`); }
         else if (p.status === 'ready') setStatus('<span class="spinner"></span>Transcribing…');
         return;
       }
@@ -58,7 +59,7 @@ function transcribe(samples) {
     };
     w.addEventListener('message', onmsg);
     setStatus('<span class="spinner"></span>Loading speech model…');
-    w.postMessage({ type: 'transcribe', id, audio: samples, model: MODELS[settings.model], device: hasWebGPU ? 'webgpu' : 'wasm' });
+    w.postMessage({ type: 'transcribe', id, audio: samples, model: MODELS[settings.model], device: hasWebGPU ? 'webgpu' : 'wasm', dtype: DTYPE });
   });
 }
 
@@ -271,4 +272,4 @@ function md(t) { return esc(t).replace(/\*\*(.+?)\*\*/g, '<b>$1</b>').replace(/^
 
 // preload dictionary + warm the model in the background
 dictReady = loadDict('./data/cmudict.json');
-window.addEventListener('load', () => { getWorker().postMessage({ type: 'load', id: 'warm', model: MODELS[settings.model], device: hasWebGPU ? 'webgpu' : 'wasm' }); });
+window.addEventListener('load', () => { getWorker().postMessage({ type: 'load', id: 'warm', model: MODELS[settings.model], device: hasWebGPU ? 'webgpu' : 'wasm', dtype: DTYPE }); });
