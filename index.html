@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="app-version" content="1.1.0">
 <title>Connected Speech Analyzer</title>
 <meta name="description" content="See how native English speakers really pronounce things: IPA, reductions, assimilations, linking and intonation — analyzed in your browser.">
 <style>
@@ -15,6 +16,7 @@
   body { margin:0; background:var(--bg); color:var(--ink); font:15px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; }
   header { padding:22px 28px 10px; }
   header h1 { margin:0; font-size:22px; font-weight:700; letter-spacing:-.01em; }
+  header .ver { font-size:12px; font-weight:500; color:var(--muted); background:#eef1f7; border-radius:999px; padding:2px 8px; vertical-align:middle; margin-left:6px; }
   header p { margin:4px 0 0; color:var(--muted); }
   main { max-width:1180px; margin:0 auto; padding:10px 28px 60px; }
   .card { background:var(--card); border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin:14px 0; }
@@ -102,7 +104,7 @@
 </head>
 <body>
 <header>
-  <h1>Connected Speech Analyzer</h1>
+  <h1>Connected Speech Analyzer <span id="version" class="ver"></span></h1>
   <p>Upload a clip of a native speaker. See every sound, the reductions and assimilations they used, and the melody of each phrase — all analyzed inside your browser.</p>
 </header>
 <main>
@@ -146,6 +148,6 @@
     </div>
   </div>
 </main>
-<script type="module" src="./js/app.js"></script>
+<script type="module" src="./js/app.js?v=1.1.0"></script>
 </body>
 </html>

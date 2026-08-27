@@ -4,6 +4,8 @@ import { analyze } from './rules.js';
 import { silences, refineTimestamps, analyzeProsody } from './prosody.js';
 import { explain } from './explain.js';
 
+export const VERSION = '1.1.0';
+
 const TYPES = {
   contraction: { c: 'var(--c-contr)', n: 'Contraction' }, weak_form: { c: 'var(--c-weak)', n: 'Weak form' }, flapping: { c: 'var(--c-flap)', n: 'Flap' },
   assimilation: { c: 'var(--c-assim)', n: 'Assimilation' }, elision: { c: 'var(--c-elis)', n: 'Dropped sound' }, glottal: { c: 'var(--c-glot)', n: 'Glottal T' }, linking: { c: 'var(--c-link)', n: 'Linking' },
@@ -30,13 +32,15 @@ $('#apikey').onchange = e => { settings.key = e.target.value.trim(); saveSetting
 $('#toggle-settings').onclick = () => { $('#settings').classList.toggle('open'); };
 
 const hasWebGPU = !!navigator.gpu;
+$('#version').textContent = 'v' + VERSION;
+console.log('Connected Speech Analyzer v' + VERSION);
 const DTYPE = new URLSearchParams(location.search).get('dtype') || undefined;   // e.g. ?dtype=q8 to force the small int8 files
 $('#engine').textContent = hasWebGPU ? 'WebGPU available — fast.' : 'No WebGPU in this browser — using the slower CPU path (Chrome or Edge recommended).';
 
 function setStatus(html) { $('#status').innerHTML = html; }
 
 function getWorker() {
-  if (!worker) worker = new Worker('./js/asr-worker.js', { type: 'module' });
+  if (!worker) worker = new Worker('./js/asr-worker.js?v=' + VERSION, { type: 'module' });
   return worker;
 }
 function transcribe(samples) {

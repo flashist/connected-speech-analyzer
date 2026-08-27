@@ -23,6 +23,12 @@ audio never leaves the computer.
   and sent straight to the Anthropic API from the page.
 - Transcript corrections: double-click a word, fix it, press Enter → the analysis re-runs with the corrected word.
 
+## Versioning
+
+The version is shown in the page header (`vX.Y.Z`) and is defined once in `js/app.js` (`VERSION`). The same string is
+appended to the script and worker URLs (`app.js?v=…`) so browsers fetch fresh code after a deploy. When you change the
+web app: bump `VERSION` in `js/app.js` **and** the `?v=` in `index.html`, then deploy.
+
 ## Run locally
 
 ```sh
