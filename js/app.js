@@ -24,8 +24,8 @@ const audio = $('#audio');
 const settings = { model: 'base', key: '' };
 try { Object.assign(settings, JSON.parse(localStorage.getItem('csa-settings') || '{}')); } catch {}
 function saveSettings() { try { localStorage.setItem('csa-settings', JSON.stringify(settings)); } catch {} }
-$('#model').value = settings.model; $('#apikey').value = settings.key;
-$('#model').onchange = e => { settings.model = e.target.value; saveSettings(); };
+settings.model = 'base';   // only the base model is self-hosted on the site
+$('#apikey').value = settings.key;
 $('#apikey').onchange = e => { settings.key = e.target.value.trim(); saveSettings(); };
 $('#toggle-settings').onclick = () => { $('#settings').classList.toggle('open'); };
 

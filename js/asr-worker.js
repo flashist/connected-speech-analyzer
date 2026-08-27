@@ -1,6 +1,55 @@
 // Whisper in a Web Worker via Transformers.js (WebGPU when available, WASM otherwise).
-import { pipeline, env } from 'https://cdn.jsdelivr.net/npm/@huggingface/transformers@4.2.0/dist/transformers.min.js';
+// Everything is self-hosted: the library (vendor/), the ONNX runtime (vendor/ort/) and the model files
+// (models/), so the page works even where huggingface.co or CDNs are unreachable.
+import { pipeline, env } from '../vendor/transformers.js';
+
+const SITE = new URL('../', self.location.href).href;          // e.g. https://host/analyzer/
+const MODELS = SITE + 'models/';
+
+// Point the library's "remote host" at this site instead of huggingface.co: files live at
+// models/<org>/<model>/<file>, the same layout the Hub uses.
 env.allowLocalModels = false;
+env.allowRemoteModels = true;
+env.remoteHost = MODELS;
+env.remotePathTemplate = '{model}/';
+env.backends.onnx.wasm.wasmPaths = SITE + 'vendor/ort/';        // ORT runtime files, self-hosted
+
+// ---- custom cache: serves files split into <100 MB parts (GitHub limit) and persists them in the Cache API
+let manifest = null;
+async function getManifest() {
+  if (!manifest) manifest = await (await fetch(MODELS + 'manifest.json')).json();
+  return manifest;
+}
+const store = () => (self.caches ? caches.open('csa-models-v1') : null);
+
+env.useCustomCache = true;
+env.customCache = {
+  async match(key) {
+    const c = await store();
+    if (c) { const hit = await c.match(key); if (hit) return hit; }
+    const rel = key.startsWith(MODELS) ? key.slice(MODELS.length) : null;
+    if (!rel) return undefined;
+    const m = await getManifest();
+    const entry = m[rel];
+    if (!entry || !entry.parts) return undefined;               // plain files are fetched normally by the library
+    const dir = rel.slice(0, rel.lastIndexOf('/') + 1);
+    const chunks = [];
+    for (const p of entry.parts) {
+      const r = await fetch(MODELS + dir + p);
+      if (!r.ok) throw new Error(`Could not download ${p} (${r.status})`);
+      chunks.push(new Uint8Array(await r.arrayBuffer()));
+    }
+    const all = new Uint8Array(entry.size); let off = 0;
+    for (const ch of chunks) { all.set(ch, off); off += ch.length; }
+    const resp = new Response(all, { status: 200, headers: { 'Content-Type': 'application/octet-stream', 'Content-Length': String(entry.size) } });
+    if (c) { try { await c.put(key, resp.clone()); } catch {} }
+    return resp;
+  },
+  async put(key, response) {
+    const c = await store();
+    if (c) { try { await c.put(key, response); } catch {} }
+  },
+};
 
 let transcriber = null, loadedKey = '', loading = null;
 
@@ -9,8 +58,7 @@ function load(model, device) {
   if (transcriber && loadedKey === key) return Promise.resolve();
   if (loading && loading.key === key) return loading.p;
   // fp16 variants give garbage on some GPUs, so stick to fp32 encoder + q4 decoder (the combination the official
-  // Transformers.js Whisper demo uses). Download sizes: base ≈ 205 MB, small ≈ 590 MB, turbo ≈ 760 MB (q4 encoder);
-  // on WASM the q8 files are used (base ≈ 77 MB).
+  // Transformers.js Whisper demo uses). On WASM the q8 ("quantized") files are used.
   const gpuDtype = /large-v3-turbo/.test(model) ? { encoder_model: 'q4', decoder_model_merged: 'q4' }
                  : { encoder_model: 'fp32', decoder_model_merged: 'q4' };
   const opts = {

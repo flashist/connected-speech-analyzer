@@ -113,9 +113,9 @@
       <button id="toggle-settings" class="secondary">Settings</button>
       <span id="status"></span>
     </div>
-    <div class="hint" style="margin-top:6px">Audio or video, up to 3 minutes. Nothing is uploaded — the speech model runs in this browser tab (first use downloads it, ~200 MB). <span id="engine"></span></div>
+    <div class="hint" style="margin-top:6px">Audio or video, up to 3 minutes. Nothing is uploaded — the speech model runs in this browser tab (first use downloads it from this site, ~210 MB). <span id="engine"></span></div>
     <div class="settings" id="settings">
-      <label>Speech model <select id="model"><option value="base">base (fast, ~200 MB download)</option><option value="small">small (more accurate, ~590 MB)</option><option value="turbo">large‑v3‑turbo (best, ~760 MB, experimental)</option></select></label>
+      <span class="hint">Speech model: whisper‑base.en, served from this site (~210 MB, downloaded once and kept by the browser).</span>
       <label>Claude API key (optional, for listening notes; stays in this browser) <input type="password" id="apikey" placeholder="sk-ant-…"></label>
     </div>
   </div>

@@ -1,0 +1,51 @@
+{
+ "onnx-community/whisper-base.en_timestamped/added_tokens.json": {
+  "size": 34604
+ },
+ "onnx-community/whisper-base.en_timestamped/config.json": {
+  "size": 2197
+ },
+ "onnx-community/whisper-base.en_timestamped/generation_config.json": {
+  "size": 1556
+ },
+ "onnx-community/whisper-base.en_timestamped/merges.txt": {
+  "size": 456318
+ },
+ "onnx-community/whisper-base.en_timestamped/normalizer.json": {
+  "size": 52666
+ },
+ "onnx-community/whisper-base.en_timestamped/onnx/decoder_model_merged_q4.onnx": {
+  "size": 123736279,
+  "parts": [
+   "decoder_model_merged_q4.onnx.part0",
+   "decoder_model_merged_q4.onnx.part1"
+  ]
+ },
+ "onnx-community/whisper-base.en_timestamped/onnx/decoder_model_merged_quantized.onnx": {
+  "size": 53712196
+ },
+ "onnx-community/whisper-base.en_timestamped/onnx/encoder_model.onnx": {
+  "size": 82451730
+ },
+ "onnx-community/whisper-base.en_timestamped/onnx/encoder_model_quantized.onnx": {
+  "size": 23159173
+ },
+ "onnx-community/whisper-base.en_timestamped/preprocessor_config.json": {
+  "size": 339
+ },
+ "onnx-community/whisper-base.en_timestamped/quantize_config.json": {
+  "size": 10126
+ },
+ "onnx-community/whisper-base.en_timestamped/special_tokens_map.json": {
+  "size": 2173
+ },
+ "onnx-community/whisper-base.en_timestamped/tokenizer.json": {
+  "size": 2405679
+ },
+ "onnx-community/whisper-base.en_timestamped/tokenizer_config.json": {
+  "size": 282662
+ },
+ "onnx-community/whisper-base.en_timestamped/vocab.json": {
+  "size": 999186
+ }
+}
